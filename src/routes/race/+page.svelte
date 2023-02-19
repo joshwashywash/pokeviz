@@ -1,9 +1,6 @@
 <script lang="ts">
 	import pokemon from '$lib/json/speeds.json';
-	import { derived } from 'svelte/store';
 	import { shuffle } from '$lib/utils/array';
-	import { sineInOut } from 'svelte/easing';
-	import { tweened } from 'svelte/motion';
 
 	const count = 5;
 
@@ -19,26 +16,36 @@
 
 	const durations = top.map((poke) => poke.speed);
 	const max = Math.max(...durations);
-	const scaled = durations.map((d) => (1000 * max) / d);
-	const racers = scaled.map((duration) => tweened(0, { duration, easing: sineInOut }));
 
-	const d = derived(racers, ($racers) => $racers);
 	const h = diameter / (count + 1);
 
 	const size = radius / (2 * top.length);
 	const halfSize = size / 2;
-	const race = () => racers.map((racer) => racer.set(diameter - size).then(() => racer.set(0)));
 
-	let disabled = false;
+	let race = false;
+	let finished = 0;
+	$: if (finished === count) {
+		race = false;
+		finished = 0;
+	}
 </script>
-
 
 <div>
 	<svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {diameter} {diameter}">
-		{#each $d as x, i}
-			{@const { id, name } = top[i]}
+		{#each top as { id, name, speed }, i}
 			{@const y = h * (i + 1) - halfSize}
-			<image {y} {x} width={size} height={size} href={`pokemon/${id}.svg`}>
+			<image
+				{y}
+				class:race
+				style:--duration={`${(max / speed) * 5}s`}
+				style:--size="{size}px"
+				width={size}
+				height={size}
+				href={`pokemon/${id}.svg`}
+				on:animationend={() => {
+					finished += 1;
+				}}
+			>
 				<title>{name}</title>
 			</image>
 		{/each}
@@ -46,15 +53,32 @@
 
 	<button
 		class="btn-wide btn"
-		{disabled}
+		disabled={race}
 		on:click={() => {
-			disabled = true;
-			Promise.all(race()).then(() => {
-				disabled = false;
-			});
+			finished = 0;
+			race = true;
 		}}
 	>
 		race
 	</button>
 </div>
 
+<style>
+	@keyframes translate {
+		0% {
+			transform: translateX(0%);
+		}
+		50% {
+			transform: translateX(calc(100% - var(--size, 0px)));
+		}
+		100% {
+			transform: translateX(0%);
+		}
+	}
+
+	.race {
+		animation-name: translate;
+		animation-duration: var(--duration, 1s);
+		animation-timing-function: ease-in-out;
+	}
+</style>
