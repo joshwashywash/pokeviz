@@ -1,7 +1,6 @@
 <script lang="ts">
 	import pokemon from '$lib/json/speeds.json';
 	import { derived } from 'svelte/store';
-	import { fade } from 'svelte/transition';
 	import { shuffle } from '$lib/utils/array';
 	import { sineInOut } from 'svelte/easing';
 	import { tweened } from 'svelte/motion';
@@ -33,26 +32,29 @@
 	let disabled = false;
 </script>
 
-<svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {diameter} {diameter}">
-	{#each $d as x, i}
-		{@const { id, name } = top[i]}
-		{@const y = h * (i + 1) - halfSize}
-		<image {y} {x} width={size} height={size} href={`pokemon/${id}.svg`}>
-			<title>{name}</title>
-		</image>
-	{/each}
-</svg>
 
-<button
-	class="btn-wide btn"
-	transition:fade
-	{disabled}
-	on:click={() => {
-		disabled = true;
-		Promise.all(race()).then(() => {
-			disabled = false;
-		});
-	}}
->
-	race
-</button>
+<div>
+	<svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {diameter} {diameter}">
+		{#each $d as x, i}
+			{@const { id, name } = top[i]}
+			{@const y = h * (i + 1) - halfSize}
+			<image {y} {x} width={size} height={size} href={`pokemon/${id}.svg`}>
+				<title>{name}</title>
+			</image>
+		{/each}
+	</svg>
+
+	<button
+		class="btn-wide btn"
+		{disabled}
+		on:click={() => {
+			disabled = true;
+			Promise.all(race()).then(() => {
+				disabled = false;
+			});
+		}}
+	>
+		race
+	</button>
+</div>
+

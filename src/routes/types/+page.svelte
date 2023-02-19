@@ -73,12 +73,12 @@
 
 {#if heldNode}
 	{@const { name, color } = types[heldNode.index ?? 0]}
-	<p>
+	<h1>
 		you're holding
 		<span style:color>{name}</span>
-	</p>
+	</h1>
 {:else}
-	<p>drag around the nodes</p>
+	<h1>drag around the nodes</h1>
 {/if}
 
 <svg
