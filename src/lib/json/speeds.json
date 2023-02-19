@@ -1,0 +1,606 @@
+[
+	{
+		"name": "bulbasaur",
+		"speed": 45
+	},
+	{
+		"name": "ivysaur",
+		"speed": 60
+	},
+	{
+		"name": "venusaur",
+		"speed": 80
+	},
+	{
+		"name": "charmander",
+		"speed": 65
+	},
+	{
+		"name": "charmeleon",
+		"speed": 80
+	},
+	{
+		"name": "charizard",
+		"speed": 100
+	},
+	{
+		"name": "squirtle",
+		"speed": 43
+	},
+	{
+		"name": "wartortle",
+		"speed": 58
+	},
+	{
+		"name": "blastoise",
+		"speed": 78
+	},
+	{
+		"name": "caterpie",
+		"speed": 45
+	},
+	{
+		"name": "metapod",
+		"speed": 30
+	},
+	{
+		"name": "butterfree",
+		"speed": 70
+	},
+	{
+		"name": "weedle",
+		"speed": 50
+	},
+	{
+		"name": "kakuna",
+		"speed": 35
+	},
+	{
+		"name": "beedrill",
+		"speed": 75
+	},
+	{
+		"name": "pidgey",
+		"speed": 56
+	},
+	{
+		"name": "pidgeotto",
+		"speed": 71
+	},
+	{
+		"name": "pidgeot",
+		"speed": 91
+	},
+	{
+		"name": "rattata",
+		"speed": 72
+	},
+	{
+		"name": "raticate",
+		"speed": 97
+	},
+	{
+		"name": "spearow",
+		"speed": 70
+	},
+	{
+		"name": "fearow",
+		"speed": 100
+	},
+	{
+		"name": "ekans",
+		"speed": 55
+	},
+	{
+		"name": "arbok",
+		"speed": 80
+	},
+	{
+		"name": "pikachu",
+		"speed": 90
+	},
+	{
+		"name": "raichu",
+		"speed": 100
+	},
+	{
+		"name": "sandshrew",
+		"speed": 40
+	},
+	{
+		"name": "sandslash",
+		"speed": 65
+	},
+	{
+		"name": "nidoran♀",
+		"speed": 41
+	},
+	{
+		"name": "nidorina",
+		"speed": 56
+	},
+	{
+		"name": "nidoqueen",
+		"speed": 76
+	},
+	{
+		"name": "nidoran♂",
+		"speed": 50
+	},
+	{
+		"name": "nidorino",
+		"speed": 65
+	},
+	{
+		"name": "nidoking",
+		"speed": 85
+	},
+	{
+		"name": "clefairy",
+		"speed": 35
+	},
+	{
+		"name": "clefable",
+		"speed": 60
+	},
+	{
+		"name": "vulpix",
+		"speed": 65
+	},
+	{
+		"name": "ninetales",
+		"speed": 100
+	},
+	{
+		"name": "jigglypuff",
+		"speed": 20
+	},
+	{
+		"name": "wigglytuff",
+		"speed": 45
+	},
+	{
+		"name": "zubat",
+		"speed": 55
+	},
+	{
+		"name": "golbat",
+		"speed": 90
+	},
+	{
+		"name": "oddish",
+		"speed": 30
+	},
+	{
+		"name": "gloom",
+		"speed": 40
+	},
+	{
+		"name": "vileplume",
+		"speed": 50
+	},
+	{
+		"name": "paras",
+		"speed": 25
+	},
+	{
+		"name": "parasect",
+		"speed": 30
+	},
+	{
+		"name": "venonat",
+		"speed": 45
+	},
+	{
+		"name": "venomoth",
+		"speed": 90
+	},
+	{
+		"name": "diglett",
+		"speed": 95
+	},
+	{
+		"name": "dugtrio",
+		"speed": 120
+	},
+	{
+		"name": "meowth",
+		"speed": 90
+	},
+	{
+		"name": "persian",
+		"speed": 115
+	},
+	{
+		"name": "psyduck",
+		"speed": 55
+	},
+	{
+		"name": "golduck",
+		"speed": 85
+	},
+	{
+		"name": "mankey",
+		"speed": 70
+	},
+	{
+		"name": "primeape",
+		"speed": 95
+	},
+	{
+		"name": "growlithe",
+		"speed": 60
+	},
+	{
+		"name": "arcanine",
+		"speed": 95
+	},
+	{
+		"name": "poliwag",
+		"speed": 90
+	},
+	{
+		"name": "poliwhirl",
+		"speed": 90
+	},
+	{
+		"name": "poliwrath",
+		"speed": 70
+	},
+	{
+		"name": "abra",
+		"speed": 90
+	},
+	{
+		"name": "kadabra",
+		"speed": 105
+	},
+	{
+		"name": "alakazam",
+		"speed": 120
+	},
+	{
+		"name": "machop",
+		"speed": 35
+	},
+	{
+		"name": "machoke",
+		"speed": 45
+	},
+	{
+		"name": "machamp",
+		"speed": 55
+	},
+	{
+		"name": "bellsprout",
+		"speed": 40
+	},
+	{
+		"name": "weepinbell",
+		"speed": 55
+	},
+	{
+		"name": "victreebel",
+		"speed": 70
+	},
+	{
+		"name": "tentacool",
+		"speed": 70
+	},
+	{
+		"name": "tentacruel",
+		"speed": 100
+	},
+	{
+		"name": "geodude",
+		"speed": 20
+	},
+	{
+		"name": "graveler",
+		"speed": 35
+	},
+	{
+		"name": "golem",
+		"speed": 45
+	},
+	{
+		"name": "ponyta",
+		"speed": 90
+	},
+	{
+		"name": "rapidash",
+		"speed": 105
+	},
+	{
+		"name": "slowpoke",
+		"speed": 15
+	},
+	{
+		"name": "slowbro",
+		"speed": 30
+	},
+	{
+		"name": "magnemite",
+		"speed": 45
+	},
+	{
+		"name": "magneton",
+		"speed": 70
+	},
+	{
+		"name": "farfetch'd",
+		"speed": 60
+	},
+	{
+		"name": "doduo",
+		"speed": 75
+	},
+	{
+		"name": "dodrio",
+		"speed": 100
+	},
+	{
+		"name": "seel",
+		"speed": 45
+	},
+	{
+		"name": "dewgong",
+		"speed": 70
+	},
+	{
+		"name": "grimer",
+		"speed": 25
+	},
+	{
+		"name": "muk",
+		"speed": 50
+	},
+	{
+		"name": "shellder",
+		"speed": 40
+	},
+	{
+		"name": "cloyster",
+		"speed": 70
+	},
+	{
+		"name": "gastly",
+		"speed": 80
+	},
+	{
+		"name": "haunter",
+		"speed": 95
+	},
+	{
+		"name": "gengar",
+		"speed": 110
+	},
+	{
+		"name": "onix",
+		"speed": 70
+	},
+	{
+		"name": "drowzee",
+		"speed": 42
+	},
+	{
+		"name": "hypno",
+		"speed": 67
+	},
+	{
+		"name": "krabby",
+		"speed": 50
+	},
+	{
+		"name": "kingler",
+		"speed": 75
+	},
+	{
+		"name": "voltorb",
+		"speed": 100
+	},
+	{
+		"name": "electrode",
+		"speed": 140
+	},
+	{
+		"name": "exeggcute",
+		"speed": 40
+	},
+	{
+		"name": "exeggutor",
+		"speed": 55
+	},
+	{
+		"name": "cubone",
+		"speed": 35
+	},
+	{
+		"name": "marowak",
+		"speed": 45
+	},
+	{
+		"name": "hitmonlee",
+		"speed": 87
+	},
+	{
+		"name": "hitmonchan",
+		"speed": 76
+	},
+	{
+		"name": "lickitung",
+		"speed": 30
+	},
+	{
+		"name": "koffing",
+		"speed": 35
+	},
+	{
+		"name": "weezing",
+		"speed": 60
+	},
+	{
+		"name": "rhyhorn",
+		"speed": 25
+	},
+	{
+		"name": "rhydon",
+		"speed": 40
+	},
+	{
+		"name": "chansey",
+		"speed": 50
+	},
+	{
+		"name": "tangela",
+		"speed": 60
+	},
+	{
+		"name": "kangaskhan",
+		"speed": 90
+	},
+	{
+		"name": "horsea",
+		"speed": 60
+	},
+	{
+		"name": "seadra",
+		"speed": 85
+	},
+	{
+		"name": "goldeen",
+		"speed": 63
+	},
+	{
+		"name": "seaking",
+		"speed": 68
+	},
+	{
+		"name": "staryu",
+		"speed": 85
+	},
+	{
+		"name": "starmie",
+		"speed": 115
+	},
+	{
+		"name": "mr. mime",
+		"speed": 90
+	},
+	{
+		"name": "scyther",
+		"speed": 105
+	},
+	{
+		"name": "jynx",
+		"speed": 95
+	},
+	{
+		"name": "electabuzz",
+		"speed": 105
+	},
+	{
+		"name": "magmar",
+		"speed": 93
+	},
+	{
+		"name": "pinsir",
+		"speed": 85
+	},
+	{
+		"name": "tauros",
+		"speed": 110
+	},
+	{
+		"name": "magikarp",
+		"speed": 80
+	},
+	{
+		"name": "gyarados",
+		"speed": 81
+	},
+	{
+		"name": "lapras",
+		"speed": 60
+	},
+	{
+		"name": "ditto",
+		"speed": 48
+	},
+	{
+		"name": "eevee",
+		"speed": 55
+	},
+	{
+		"name": "vaporeon",
+		"speed": 65
+	},
+	{
+		"name": "jolteon",
+		"speed": 130
+	},
+	{
+		"name": "flareon",
+		"speed": 65
+	},
+	{
+		"name": "porygon",
+		"speed": 40
+	},
+	{
+		"name": "omanyte",
+		"speed": 35
+	},
+	{
+		"name": "omastar",
+		"speed": 55
+	},
+	{
+		"name": "kabuto",
+		"speed": 55
+	},
+	{
+		"name": "kabutops",
+		"speed": 80
+	},
+	{
+		"name": "aerodactyl",
+		"speed": 130
+	},
+	{
+		"name": "snorlax",
+		"speed": 30
+	},
+	{
+		"name": "articuno",
+		"speed": 85
+	},
+	{
+		"name": "zapdos",
+		"speed": 100
+	},
+	{
+		"name": "moltres",
+		"speed": 90
+	},
+	{
+		"name": "dratini",
+		"speed": 50
+	},
+	{
+		"name": "dragonair",
+		"speed": 70
+	},
+	{
+		"name": "dragonite",
+		"speed": 80
+	},
+	{
+		"name": "mewtwo",
+		"speed": 130
+	},
+	{
+		"name": "mew",
+		"speed": 100
+	}
+]
