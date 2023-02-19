@@ -1,10 +1,12 @@
 <script lang="ts">
-	import { beforeNavigate } from '$app/navigation';
 	import '../app.css';
 	import { base } from '$app/paths';
+	import { beforeNavigate } from '$app/navigation';
+
 	const hrefs = ['race', 'types'];
 
 	let checked = false;
+
 	beforeNavigate(() => {
 		checked = false;
 	});
