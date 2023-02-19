@@ -1,0 +1,1 @@
+@keyframes svelte-1991nci-translate{0%{transform:translateX(0%)}50%{transform:translateX(calc(100% - var(--size, 0px)))}100%{transform:translateX(0%)}}.race.svelte-1991nci{animation-name:svelte-1991nci-translate;animation-duration:var(--duration, 1s);animation-timing-function:ease-in-out}
