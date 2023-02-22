@@ -71,15 +71,15 @@
 	let heldNode: Node | null = null;
 </script>
 
-{#if heldNode}
-	{@const { name, color } = types[heldNode.index ?? 0]}
-	<h1>
+<h1>
+	{#if heldNode}
+		{@const { name, color } = types[heldNode.index ?? 0]}
 		you're holding
 		<span style:color>{name}</span>
-	</h1>
-{:else}
-	<h1>drag around the nodes</h1>
-{/if}
+	{:else}
+		drag around the nodes
+	{/if}
+</h1>
 
 <svg
 	class:cursor-grabbing={heldNode !== null}
@@ -111,7 +111,7 @@
 		{#each linkies as { source, target }}
 			{@const { x: sx, y: sy, id: sID, index } = source}
 			{@const { x: tx, y: ty, id: tID } = target}
-			{#if sx !== undefined && sy !== undefined &&  tx !== undefined && ty !==undefined}
+			{#if sx !== undefined && sy !== undefined && tx !== undefined && ty !== undefined}
 				{@const d = sID === tID ? createLoopPath(sx, sy, 2 * r) : circlePath(sx, sy, tx, ty)}
 				<path
 					stroke-opacity={sID === heldNode?.id ? 1 : 0.3}
