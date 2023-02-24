@@ -3069,17 +3069,11 @@ html {
 .h-6 {
   height: 1.5rem;
 }
-.h-full {
-  height: 100%;
-}
 .w-6 {
   width: 1.5rem;
 }
 .w-80 {
   width: 20rem;
-}
-.w-full {
-  width: 100%;
 }
 .grow {
   flex-grow: 1;
@@ -3106,6 +3100,9 @@ html {
 .bg-base-300 {
   --tw-bg-opacity: 1;
   background-color: hsl(var(--b3, var(--b2)) / var(--tw-bg-opacity));
+}
+.stroke-primary-content {
+  stroke: hsl(var(--pc));
 }
 .p-4 {
   padding: 1rem;
