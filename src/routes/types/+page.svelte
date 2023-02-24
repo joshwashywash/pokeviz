@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Head from '$lib/components/Head.svelte';
 	import types from '$lib/json/types.json';
 	import {
 		forceX,
@@ -70,6 +71,11 @@
 
 	let heldNode: Node | null = null;
 </script>
+
+<Head
+	title="Pokemon Type Advantage Network"
+	description="A visualization of how strong certain pokemon types are against others. Drag around each node to get a better view of the network."
+/>
 
 <h1>
 	{#if heldNode}
