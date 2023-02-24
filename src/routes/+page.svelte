@@ -1,5 +1,5 @@
-<script>
-	const { default: Head } = require('$lib/components/Head.svelte');
+<script lang="ts">
+	import Head from '$lib/components/Head.svelte';
 </script>
 
 <Head
